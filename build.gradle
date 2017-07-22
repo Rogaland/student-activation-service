@@ -1,0 +1,10 @@
+defaultTasks 'student-activation-frontend:npm_install',
+        'student-activation-frontend:installGrunt',
+        'student-activation-frontend:bowerInstall',
+        'student-activation-frontend:clean',
+        'student-activation-frontend:grunt_build',
+        'student-activation-frontend:webjar',
+        'student-activation-backend:clean',
+        'student-activation-backend:build'
+group 'no.rogfk'
+version '0.0.1-SNAPSHOT'

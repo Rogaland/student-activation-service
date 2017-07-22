@@ -1,0 +1,12 @@
+.gradle
+.idea
+build
+classes
+node_modules
+.DS_Store
+dist
+.tmp
+.sass-cache
+bower_components
+application-*.yml
+out

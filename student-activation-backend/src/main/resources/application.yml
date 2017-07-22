@@ -1,0 +1,25 @@
+spring:
+ application:
+  student-activation-sms-message:
+ ldap:
+  url:
+  user:
+  password:
+  base:
+
+jwt:
+ issuer:
+ base-url:
+ key:
+ max-age-minutes: "1440"
+
+sms:
+ mode: "MANUAL_QUEUE"
+ rest:
+  endpoint:
+  mobileparameter:
+  messageparameter:
+  userparameter:
+  user:
+  passwordparameter:
+  password:

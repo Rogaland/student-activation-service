@@ -1,0 +1,23 @@
+jwt:
+ key: "testing123"
+ issuer: "rogfk"
+
+spring:
+ ldap:
+   url: ""
+   user: ""
+   password: ""
+   base:
+ application:
+  student-activation-sms-message: "Brukerkonto aktivert. Passord: %s"
+
+sms:
+ mode: "MANUAL_QUEUE"
+ rest:
+  endpoint: "http://localhost:8080"
+  mobileparameter: "sMobileNumber"
+  messageparameter: "sMessage"
+  userparameter: "sUser"
+  user: ""
+  passwordparameter: "sPass"
+  password: ""

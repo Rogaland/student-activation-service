@@ -1,0 +1,105 @@
+<img src="images/rogfk_liggende_farger.jpg" class="img-responsive rfk-img">
+
+<div ng-show="!validToken">
+  <h3>Ugyldig input</h3>
+</div>
+<div ng-show="validToken">
+  <div class="rfk-header">
+    <h1>Hei {{fullname}}</h1>
+    <p>
+      Kontoen din blir aktivert etter at du har lest og godtatt vilkår for bruk av IKT-ressurser i Rogaland
+      fylkeskommune.
+      Du får en SMS med brukernavn og passord. Bruk disse til å logge deg på skolens nettverk.
+    </p>
+  </div>
+
+
+  <uib-accordion close-others="true">
+    <uib-accordion-group
+      heading="Vilkår for bruk av IKT-ressurser for elever ved videregående skoler i Rogaland fylkeskommune">
+      <p>
+      <h3>Virkeområde</h3>
+      <p>
+        Vilkårene gjelder for elever ved videregående skoler i Rogaland fylkeskommune. Vilkårene gjelder bruk av skolens
+        IKT-ressurser, det vil si nettverk, IKT-utstyr og programvare.
+      </p>
+      <h3>Bruk av IKT-ressurser</h3>
+      <p>Skolens IKT-ressurser skal primært brukes til skolerelatert arbeid. Privat bruk som opptar stor båndbredde
+        eller
+        krever uforholdsmessig mye diskplass, er ikke tillatt.
+        IKT-ressursene skal ikke brukes til å fremsette trusler og hets, utøve mobbing, opptre på rasistisk eller
+        krenkende vis, eller til handlinger som for øvrig er i strid med norsk lov.
+        Det er ikke tillatt å opprette egne nettverk på skolens område. Det er heller ikke tillatt å etablere eller
+        benytte seg av annen elektronisk kommunikasjon for å omgå sperrer og begrensinger som er satt opp i forbindelse
+        med opplæringen.
+      </p>
+      <h3>Brukeridentitet og passord</h3>
+      <p>Tilgang til skolens nettverk gis ved at skolen tildeler brukeridentitet og passord.
+        Passordet er personlig og må holdes hemmelig. Ved mistanke eller viten om at andre har fått kjennskap til
+        passordet, plikter eleven å forandre passordet umiddelbart.
+        Det er ikke tillatt å låne bort brukeridentitet og passord til andre. Det er heller ikke tillatt å tilegne seg
+        eller å opptre med annen brukers identitet.
+        Skolen er ikke ansvarlig for tap/skade som oppstår som følge av uaktsom håndtering av passord fra elevens side.
+      </p>
+      <h3>Nedlasting og installasjon av programvare</h3>
+      <p>
+        Nedlasting av filer og installasjon av programvare utover det skolen tilbyr, skjer på eget ansvar. Det forventes
+        at alle som installerer programvare gjør dette i samsvar med lisensreglene for programvaren.
+        Eleven plikter å avinstallere skolens lisensierte programvare når opplæringen avsluttes, der lisensreglene
+        krever
+        det.
+      </p>
+      <h3>Logging av nettverkstrafikk og innsyn</h3>
+      <p>
+        Datatrafikk mot internett blir logget. Hensikten med loggingen er å administrere systemet på en forsvarlig måte,
+        ivareta sikkerheten i systemet og sikre at skolens reglement overholdes.
+      </p>
+      <h3>Opphavsrett</h3>
+      <p>
+        Det er ikke tillatt å bruke IKT-ressursene i strid med regler for opphavsrett.
+      </p>
+      <h3>Datasikkerhet og personvern</h3>
+      <p>
+        Skolen skal, så langt det er mulig, beskytte elevenes integritet slik at informasjon og personlige data ikke kan
+        misbrukes.
+        Når eleven forlater datamaskinen og andre kan få tilgang til den, skal eleven alltid låse eller logge ut av
+        datamaskinen.
+        Eleven skal rapportere til skolen om misbruk, feil eller andre forhold som kan ha betydning for datasikkerheten.
+        Eleven plikter å ha oppdatert antivirusprogram på datamaskinen og benytte sikkerhetsoppdateringer for
+        operativsystem og programvare.
+      </p>
+      <h3>Ansvarsbegrensning</h3>
+      <p>
+        Skolen skal ha gode rutiner for sikkerhet, stabilitet og sikkerhetskopi, men er ikke ansvarlig for tap av data
+        eller andre tap som skyldes diskhavari, manglende sikkerhetskopi eller svikt i IKT-tjenestene.
+        Skolen er ikke ansvarlig for tap som skyldes brudd på reglementet. Skolen er heller ikke ansvarlig for tap/skade
+        på privat datautstyr som tilknyttes skolens nettverk.
+      </p>
+      <h3>Brudd på IKT-reglementet</h3>
+      <p>Brudd på IKT-reglementet kan føre til sanksjoner.</p>
+
+      <h3>Erstatning</h3>
+      <p>
+        Dersom det oppstår skade på skolens IKT-ressurser eller de går tapt, kan skolen kreve tapet erstattet etter
+        alminnelige erstatningsregler.
+      </p>
+      </p>
+    </uib-accordion-group>
+  </uib-accordion>
+
+  <div class="text-right">
+    <form class="form-inline" ng-show="!activated">
+      <div class="checkbox">
+        <label>
+          <input ng-model="needAgreement" type="checkbox"> Jeg har lest, forstått og godtar Vilkår for bruk av IKT-ressurser
+        </label>
+      </div>
+      &nbsp;&nbsp;
+      <button type="submit" class="btn btn-primary btn-sm" ng-click="agree()" ng-disabled="!needAgreement || !allowActivation">Aktiver
+        brukerkontoen min
+      </button>
+
+    </form>
+    <h3 ng-show="activated">Brukerkontoen er aktivert</h3>
+  </div>
+</div>

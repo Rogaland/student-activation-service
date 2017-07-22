@@ -1,0 +1,4 @@
+rootProject.name = 'student-activation-service'
+include 'student-activation-backend'
+include 'student-activation-frontend'
+

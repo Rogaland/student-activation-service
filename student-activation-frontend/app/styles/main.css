@@ -1,0 +1,49 @@
+body {
+  padding: 25px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 50px;
+  color: #777;
+}
+
+.glyphicon.glyphicon-info-sign {
+  font-size: 25px;
+  padding-right: 25px;
+}
+
+.acceptButton {
+  margin-top: 25px;
+}
+
+.rfk-header {
+  padding-bottom: 20px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+
+@media only screen and (max-width: 435px)  {
+  h1, h2, h3 {
+    font-size: small;
+  }
+  span[uib-accordion-header] {
+    font-size: small;
+  }
+  body {
+    font-size: x-small;
+  }
+  .rfk-header h1 {
+    font-size: medium;
+  }
+}
+
+.rfk-img {
+  width: 40%;
+  height: auto;
+}
