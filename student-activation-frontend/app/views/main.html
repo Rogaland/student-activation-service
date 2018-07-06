@@ -7,9 +7,18 @@
   <div class="rfk-header">
     <h1>Hei {{fullname}}</h1>
     <p>
-      Kontoen din blir aktivert etter at du har lest og godtatt vilkår for bruk av IKT-ressurser i Rogaland
-      fylkeskommune.
-      Du får en SMS med brukernavn og passord. Bruk disse til å logge deg på skolens nettverk.
+      Kontoen din blir aktivert etter at du har lest og godtatt:
+    <ul>
+      <li>
+        Vilkår for bruk av IKT-ressurser for elever ved
+        videregående skoler i Rogaland fylkeskommune
+      </li>
+      <li>
+        Reglement for utlån av lærebøker i Rogaland
+        fylkeskommune.
+      </li>
+    </ul>
+    Du får en SMS med brukernavn og passord. Bruk disse til å logge deg på skolens nettverk.
     </p>
   </div>
 
@@ -17,7 +26,7 @@
   <uib-accordion close-others="true">
     <uib-accordion-group
       heading="Vilkår for bruk av IKT-ressurser for elever ved videregående skoler i Rogaland fylkeskommune">
-      <p>
+
       <h3>Virkeområde</h3>
       <p>
         Vilkårene gjelder for elever ved videregående skoler i Rogaland fylkeskommune. Vilkårene gjelder bruk av skolens
@@ -83,7 +92,81 @@
         Dersom det oppstår skade på skolens IKT-ressurser eller de går tapt, kan skolen kreve tapet erstattet etter
         alminnelige erstatningsregler.
       </p>
+
+    </uib-accordion-group>
+  </uib-accordion>
+
+  <uib-accordion close-others="true">
+    <uib-accordion-group
+      heading="Reglement for utlån av lærebøker i Rogaland fylkeskommune">
+      <p><i>Gjelder fra 1. august 2018.</i></p>
+      <h3>Generelt/virkeområde</h3>
+      <p>
+        Alle elever i videregående skole får tilbud om gratis læremidler, jf. <a
+        href="https://lovdata.no/dokument/SF/forskrift/2006-06-23-724/KAPITTEL_22-3#%C2%A719-6" target="_blank">§ 19-6 i
+        forskrift til opplæringsloven</a>. Reglement for utlån av lærebøker i Rogaland fylkeskommune gjelder for alle
+        offentlige videregående skoler i Rogaland.
       </p>
+      <p>
+        Reglementet gjelder det skolen har definert som felles pensumlitteratur i det enkelte fag. For skolebibliotekets
+        øvrige utlån av bøker og annet materiell, gjelder skolens eget reglement.
+      </p>
+      <h3>Aksept av låneregler</h3>
+      <p>
+        Lånereglene for utlån av lærebøker aksepteres når eleven aktiverer brukeren sin på fylkeskommunens nettverk.
+      </p>
+      <p>
+        Når lånereglene er akseptert, gjelder den også ved skolebytte innen fylket.
+      </p>
+      <h3>Utlånsordning</h3>
+      <p>
+        Ved skolestart vil elevene får utlevert bøkene de trenger. Hvert eksemplar har en unik strekkode, og eleven må
+        levere tilbake det samme eksemplaret ved skoleårets slutt. Eleven bør skrive navn, klasse og skoleår på innsiden
+        av bokpermen. Dette for å forhindre at bøker forbyttes. Eleven skal påse at bøkene er i tilfredsstillende stand.
+      </p>
+      <p>
+        Dersom eleven bytter fag eller avbryter opplæringen i løpet av skoleåret, skal bøkene leveres til
+        utlånsansvarlig umiddelbart.
+      </p>
+      <p>
+        Det er ikke tillatt å notere, streke under tekst, bruke uthevingstusj eller lignende i bøkene. Strekkoden må
+        være
+        intakt.
+      </p>
+      <p>
+        Eleven anbefales å sette bokbind på bøkene. Alle bøkene skal leveres tilbake ved slutten av skoleåret i henhold
+        til den enkelte skoles oppsatte plan. Bøkene må
+        leveres personlig, slik at skolen får gitt eleven beskjed om eventuelt manglende bøker før siste frist.
+      </p>
+      <p>
+        <b>Siste frist for å levere tilbake utlånsbøkene er skolens siste offisielle skoledag.</b>
+      </p>
+      <h3>Erstatning ved tap/skade</h3>
+      <p>
+        Eleven er ansvarlig for lånte bøker. Det betyr at eleven, eller elevens foresatte må erstatte bøker som skades
+        eller tapes i utlånsperioden, eller som ikke leveres tilbake innen innleveringsfristen. Det kreves ikke
+        erstatning for normal slitasje.
+      </p>
+      <p>
+        Skolen vil kreve tapet erstattet etter alminnelige erstatningsregler, jf. <a
+        href="https://lovdata.no/dokument/NL/lov/1969-06-13-26#KAPITTEL_1" target="_blank">kapittel 1 i
+        skadeerstatningsloven</a>.
+        Erstatningen vil som hovedregel være gjenanskaffelsesprisen for boken/bøkene. Skolen må i det enkelte tilfelle
+        vurdere om vilkårene for å kreve erstatning er tilstede.
+      </p>
+      <p>
+        Uavhengig av manglende levering og utestående erstatningskrav, er skolen pliktig til å holde eleven med
+        nødvendige læremidler. Dersom en bok blir tapt i løpet av skoleåret, kan eleven få låne en ny bok av
+        utlånsansvarlig. Skulle boken ikke bli levert inn innen siste innleveringsfrist, vil det bli sendt
+        erstatningskrav til elev eller foresatte med 30 dagers betalingsfrist. Dersom kravet ikke innfris, vil det
+        bli sendt til inkasso.
+      </p>
+      <p>
+        Skolene tar ikke imot bøker etter skolens siste offisielle dag. Dette fordi skolene umiddelbart må bestille
+        nye bøker. Erstatningskravet må betales, og eleven kan ikke regne med å få ettergitt beløpet dersom boken
+        senere skulle komme til rette.
+      </p>
+
     </uib-accordion-group>
   </uib-accordion>
 
@@ -91,11 +174,13 @@
     <form class="form-inline" ng-show="!activated">
       <div class="checkbox">
         <label>
-          <input ng-model="needAgreement" type="checkbox"> Jeg har lest, forstått og godtar Vilkår for bruk av IKT-ressurser
+          <input ng-model="needAgreement" type="checkbox"> Jeg har lest, forstått og godtar vilkår for bruk av
+          IKT-ressurser og reglement for utlån av lærebøker.
         </label>
       </div>
       &nbsp;&nbsp;
-      <button type="submit" class="btn btn-primary btn-sm" ng-click="agree()" ng-disabled="!needAgreement || !allowActivation">Aktiver
+      <button type="submit" class="btn btn-primary btn-sm" ng-click="agree()"
+              ng-disabled="!needAgreement || !allowActivation">Aktiver
         brukerkontoen min
       </button>
 

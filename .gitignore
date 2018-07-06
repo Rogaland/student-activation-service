@@ -10,3 +10,4 @@ dist
 bower_components
 application-*.yml
 out
+student-activation-service.iml
