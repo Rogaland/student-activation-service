@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine as java
+FROM openjdk:8-jdk as java
 USER root
 COPY . .
 RUN ./gradlew --no-daemon build
