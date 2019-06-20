@@ -1,7 +1,7 @@
-FROM gradle:2.13-jdk8-alpine as java
+FROM openjdk:8-jdk-alpine as java
 USER root
 COPY . .
-RUN gradle --no-daemon build
+RUN ./gradlew --no-daemon build
 
 FROM openjdk:8-jre-alpine
 WORKDIR /data
