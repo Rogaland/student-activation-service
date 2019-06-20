@@ -37,7 +37,7 @@ dependencies {
     compile name: 'student-activation-frontend'
 
     compile('no.rogfk:jwt-spring-boot:0.0.14')
-    compile('no.rogfk:rfk-ldap-utilities:0.0.1')
+    compile('no.rogk:rfk-ldap-utilities:0.0.1')
     compile('no.rogfk:rest-sms-wrapper-spring-boot:0.0.10')
 
     compile('org.springframework.boot:spring-boot-devtools')
